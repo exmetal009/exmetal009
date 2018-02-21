@@ -1,3 +1,18 @@
+/*Background*/
 #main_div {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
   background-color: #dddddd;
+}
+/*Top Bar*/
+#mainTop_div {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 250px;
+  background-color: #aaaaaa;
 }
