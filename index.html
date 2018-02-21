@@ -7,7 +7,7 @@
   </head>
   <body>
     <div id="main_div">
-      <div id="mainTop_div">
+      <div id="mainTop_div" class="noselect">
         <div id="topBarPicture_div">
           <img src="https://scontent.fbtz1-10.fna.fbcdn.net/v/t1.0-9/26166708_1853858121308592_7927919342383026881_n.jpg?oh=b1715c1026f53d05b2485b6682f1ea82&oe=5B08D107"
           id="ProfilePicture" >
@@ -26,22 +26,53 @@
       <div id="mainCenter_div">
         <Div id="leftInterfaceHolder_div">
           <Div id="leftInterface_div">
-            <a href="https://exmetal009.github.io/exmetal009/secondpage.html">link</a>
+            <div id="LI_link1_div">
+              <label id="LI_link1_index" class="noselect">Merve'nin doğum Günü!</label>
+            </div>
           </Div>
         </Div>
         <div id="PostGridHolder_div">
-          <div id="postGrid_div">
-
-          </div>
         </div>
       </div>
       <div id="mainBottom_div">
         <Div id="BottomInterface_div">
+          <div id="adminEnterance_div">
+            <div id="adminEnteranceLabelHolder_div" class="adminEnterenceHolders">
+              <label id="adminEnterance_lbl" class="noselect">Admin Girişi:</label>
+            </div>
+            <Div id="adminEnteranceInputHolder_div" class="adminEnterenceHolders">
+              <div id="adminEnteranceInputHolderA">
+              <input typle="text" class="adminEnterenceInputs" id="adminEnterenceUsername_TxtFld" placeholder="kullanıcı adı">
+            </div>
+            <div id="adminEnteranceInputHolderB">
+              <input type="password" class="adminEnterenceInputs" id="adminEnterencePassword_TxtFld" placeholder="Şifre">
+            </div>
+            </div>
+            <div id="adminEnteranceButtonHolder_div">
+              <button id="adminEnterence_SignInBtn" class="noselect">Giriş Yap</button>
+            </div>
+        </div>
         </Div>
       </div>
 
     </div>
 
     <script src="scripts/mainpage.js"></script>
+
+      //Firebase //
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script>
+
+  var config = {
+    apiKey: "AIzaSyB_sLUwSe76_IIVUVwcVNJxwjk2GZmX8Xg",
+    authDomain: "yigitozaydin-page.firebaseapp.com",
+    databaseURL: "https://yigitozaydin-page.firebaseio.com",
+    projectId: "yigitozaydin-page",
+    storageBucket: "",
+    messagingSenderId: "1096659882766"
+  };
+  firebase.initializeApp(config);
+</script>
   </body>
 </html>

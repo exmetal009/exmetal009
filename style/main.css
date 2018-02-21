@@ -1,6 +1,6 @@
 /*Background*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
-/*Main Div*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
+/*Main*/
 #main_div {
   position: absolute;
   left: 0px;
@@ -9,8 +9,20 @@
   height: 100%;
   background-color: #dddddd;
 }
+textarea:focus, input:focus{
+    outline: none;
+} /*NO GLOW*/
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+} /*NO HIGHLIGHT FOR TEXTS*/
 
-/*Top Div*/
+/*Top Interface*/
 #mainTop_div {
   position: absolute;
   left: 0px;
@@ -93,21 +105,13 @@
   font-size: 1.5vw;
 }
 
-/*Center Div*/
+/*Center Interface*/
 #mainCenter_div{
   position: fixed;
   left: 0px;
   top: 20%;
   width: 100%;
   height: 75%;
-}
-#leftInterfaceHolder_div{
-  position: absolute;
-  background-color: #aaaaaa ;
-  left: 5%;
-  top: 15%;
-  width: 15vw;
-  height: 27vw;
 }
 #PostGridHolder_div{
   position: absolute;
@@ -117,19 +121,8 @@
   top: 15%;
   height: 27vw;
 }
-#postGrid_div{
-  position: absolute;
-  background: #eeeeee;
-  left: 0.5vw;
-  top: 0.5vw;
-  bottom: 1vw;
-  right: 1vw;
-  width: 59vw;
-  height: 26vw;
 
-}
-
-/*Bottom Div*/
+/*Bottom Interface*/
 #mainBottom_div{
   position: fixed;
   background: #ababab;
@@ -149,4 +142,168 @@
   height: 40%;
   margin-left: 5%;
   margin-right: 5%;
+}
+#adminEnterance_div{
+  position: absolute;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+}
+#adminEnteranceLabelHolder_div{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#adminEnterance_lbl{
+  position: absolute;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  font-weight: 300;
+  font-size: 1.2vw;
+}
+#adminEnteranceInputHolder_div{
+  position: relative;
+  width: 30%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  align-items: center;
+  justify-content: center;
+}
+#adminEnteranceInputHolderA{
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+#adminEnteranceInputHolderB{
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+}
+.adminEnterenceInputs{
+  background-color: #bbbbbb;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #aaaaaa;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  color: #555555;
+  font-weight: 300;
+  font-size: 1vw;
+  transition: 0.2s;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 80%;
+  top: 5%;
+  left: 10%;
+  height: 80%;
+}
+#adminEnterenceUsername_TxtFld{
+
+}
+#adminEnterenceUsername_TxtFld:hover{
+  background-color: #cccccc;
+  cursor: default;
+}
+#adminEnterenceUsername_TxtFld:focus{
+  background-color: #eeeeee;
+}
+#adminEnterencePassword_TxtFld{
+
+}
+#adminEnterencePassword_TxtFld:hover{
+  background-color: #cccccc;
+  cursor: default;
+}
+#adminEnterencePassword_TxtFld:focus{
+  background-color: #eeeeee;
+}
+#adminEnteranceButtonHolder_div{
+  position: relative;
+  width: 10%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  align-items: center;
+  justify-content: center;
+}
+#adminEnterence_SignInBtn{
+  font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-weight: 300;
+  font-size: 1.2vw;
+  position: absolute;
+  width: 80%;
+  top: 5%;
+  height: 90%;
+  left: 10%;
+  background-color: #dddddd;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+#adminEnterence_SignInBtn:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+}
+#adminEnterence_SignInBtn:active{
+    background-color: #cccccc;
+}
+
+/*Left Interface*/
+#leftInterfaceHolder_div{
+  position: absolute;
+  background-color: #aaaaaa ;
+  left: 5%;
+  top: 15%;
+  width: 15vw;
+  height: 27vw;
+}
+#LI_link1_div{
+  position: absolute;
+  background-color: #555555;
+  width: 100%;
+  top: 0px;
+  height: 2vw;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s;
+}
+#LI_link1_div:hover{
+    background-color: #777777;
+    cursor: pointer;
+}
+#LI_link1_div:active{
+    background-color: #eeeeee;
+}
+#LI_link1_index{
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 1vw;
+}
+#LI_link1_index:hover{
+  cursor: pointer;
 }
